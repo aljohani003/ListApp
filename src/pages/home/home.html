@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The List:
+  <ion-list>
+    <ion-item *ngfor="let item of items" (click)="itemclicked($event, item)">
+      <h3>{{item,name}}
+  <h2>Welcome to Ionic!</h2>
+</ion-item>
+</ion-list>
+</ion-content>
